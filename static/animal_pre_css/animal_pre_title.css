@@ -1,0 +1,86 @@
+/* #region 抬头基础样式 */
+.header_reset {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* 抬头导航栏容器 */
+.site_header {
+    background: linear-gradient(135deg, #4b6cb7, #182848);
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* 使用伪元素添加半透明背景图 */
+.site_header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('./title.jpeg');
+    background-position: center -200px; /* 控制背景图向上偏移 */
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.3; /* 控制透明度（0~1） */
+    z-index: -1;
+}
+
+/* 抬头左侧标题 */
+.header_title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* 抬头按钮容器 */
+.button_container {
+    margin-left: auto;
+    display: flex;
+    gap: 15px; /* 控制导航项之间的间距 */
+}
+
+/* 抬头按钮通用样式 */
+.nav_button {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    background-color: #4acf2d;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* 悬停效果 */
+.nav_button:hover {
+    background-color: #4db83e;
+}
+
+/* 抬头响应式设计 */
+@media (max-width: 768px) {
+    .site_header {
+        padding: 0.8rem;
+    }
+    .header_title {
+        font-size: 1.5rem;
+    }
+    .button_container {
+        gap: 10px; /* 调整小屏幕下按钮之间的间距 */
+    }
+}
+/* endregion */

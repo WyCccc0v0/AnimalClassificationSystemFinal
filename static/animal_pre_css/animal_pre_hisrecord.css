@@ -1,0 +1,91 @@
+/* 设置历史记录表样式 */
+#historyModal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 模态框内部内容区域 */
+.history-content {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 900px;
+    padding: 20px 30px;
+    position: relative;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* 关闭按钮 X */
+.history-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 24px;
+    color: #888;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.history-close:hover {
+    color: red;
+}
+
+/* 表头横向排列 */
+.history-header {
+    display: flex;
+    font-weight: bold;
+    padding: 10px 0;
+    border-bottom: 2px solid #ddd;
+}
+.history-header .col {
+    flex: 1;
+    text-align: center;
+}
+
+/* 每条记录横向排列 */
+.history-body .history-row {
+    display: flex;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    align-items: center;
+}
+.history-body .history-row .col {
+    flex: 1;
+    text-align: center;
+}
+
+/* 操作按钮 */
+.btn-view,
+.btn-download {
+    padding: 6px 12px;
+    margin: 0 4px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: white;
+    transition: background-color 0.3s;
+}
+.btn-download {
+    background-color: #2ecc71;
+}
+.btn-view:hover {
+    background-color: #2980b9;
+}
+.btn-download:hover {
+    background-color: #27ae60;
+}
+
+
+.history-body {
+    max-height: 250px; 
+    overflow-y: auto;
+    margin-top: 10px;
+}

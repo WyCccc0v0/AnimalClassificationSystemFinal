@@ -1,0 +1,37 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "4275555",
+      "name": "查看MV",
+      "font_class": "chakanMV",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "4275562",
+      "name": "上传",
+      "font_class": "shangchuan",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "5057534",
+      "name": "下载",
+      "font_class": "xiazai",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "10056986",
+      "name": "查看",
+      "font_class": "chakan",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    }
+  ]
+}

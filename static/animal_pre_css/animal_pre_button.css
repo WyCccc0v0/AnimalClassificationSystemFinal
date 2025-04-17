@@ -1,0 +1,109 @@
+/* #region 悬浮按钮基本样式 */
+#uploadButton, #resultButton,#downloadLink,#historyButton,#floatingNav {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #2b2b2b;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 28px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    line-height: 50px;
+    z-index: 998;
+    transition: background-color 0.3s ease;
+}
+
+/* 悬浮按钮导航样式 */
+#floatingNav {
+    position: fixed;
+    right: 20px;
+    bottom: 36px;
+    width: 50px;
+    height: 50px;
+    background-color: #2b2b2b;
+    color: #ffffff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 26px;
+    line-height: 50px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    text-decoration: none;
+    z-index: 999;
+    transition: background-color 0.3s ease;
+}
+
+/* 悬浮按钮字体符号大小 */
+#floatingNav .file_font,#uploadButton .button_font,
+#resultButton .button_font,#downloadLink .button_font,
+#historyButton .button_font {
+    font-size: 26px;
+    line-height: 50px;
+}
+
+/* 悬浮按钮位置 */
+#uploadButton {
+    right: 20px;
+    bottom: 272px;
+}
+#resultButton {
+    right: 20px;
+    bottom: 213px;
+}
+#historyButton {
+    right: 20px;
+    bottom: 154px;
+}
+#downloadLink {
+    right: 20px;
+    bottom: 95px;
+}
+
+/* 悬浮按钮高光样式 */
+#uploadButton:hover, #resultButton:hover, #floatingNav:hover,
+#historyButton:hover, #downloadLink:hover {
+    background-color: #444444;
+}
+/* #endregion */
+
+/* #region悬浮按钮提示框 */
+
+.tooltip {
+    display: none;
+    right: 70px;
+    position: fixed;
+    background-color: #333;
+    color: white;
+    padding: 8px 12px;
+    line-height: 1.4;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    z-index: 1000;
+}
+
+/* 悬浮按钮提示框 */
+#floatingNav:hover + .tooltip {
+    display: block;
+}
+
+/* 悬浮按钮提示框位置 */
+#Nav_tooltip {
+    bottom: 68px;
+}
+#down_tooltip {
+    bottom: 127px;
+}
+#history_tooltip {
+    bottom: 186px;
+}
+#result_tooltip {
+    bottom: 245px;
+}
+#upload_tooltip {
+    bottom: 304px;
+}
+/* #endregion */

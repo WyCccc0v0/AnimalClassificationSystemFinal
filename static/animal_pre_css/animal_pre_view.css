@@ -1,0 +1,72 @@
+/* #region 预览和结果标题样式 */
+#box_title {
+    display: flex;
+    justify-content: space-between; /* 左右对齐 */
+    align-items: center;
+    width: 100%;                    /* 全屏宽度 */
+    max-width: 750px;              /* 控制两边靠中 */
+    margin: 0 auto;                 /* 居中显示整个容器 */
+    padding: 10px;
+    padding-bottom: 0;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: "Microsoft YaHei", sans-serif;
+    color: #333;
+}
+
+/* 预览和结果标题间距 */
+.title-left {
+    margin-right: 300px;  /* 原来是800px，现在减少间距 */
+}
+
+/* 预览和结果盒子 */
+.predict_box {
+    display: flex;
+    justify-content: space-between;
+    padding: 70px;
+    padding-top: 10px;
+    gap: 40px;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+/* 左边的图片预览区域 */
+#preview {
+    flex: 1;
+    height: 500px;
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    border: 2px solid #ccc;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* 右侧的结果区域 */
+#results {
+    flex: 1;
+    height: 500px;
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    border: 2px solid #ccc;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* 预览和结果位置 */
+#preview img, #results img {
+    width: calc((100% - 60px) / 3);
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+    margin: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: inline-block;
+    background-color: transparent;  
+}
+/* #endregion */

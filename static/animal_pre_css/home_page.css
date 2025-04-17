@@ -1,0 +1,77 @@
+/* 去掉默认边距，页面铺满 */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* 背景容器，铺满全屏 */
+.bg-container {
+    position: relative;
+    height: 100%;
+    background-image: url('./background.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 中间的白线 */
+.center-line {
+    width: 60%;
+    max-width: 1800px;
+    border: none;
+    border-top: 3px solid white;
+    margin: 20px auto 10px auto;
+}
+
+/* 标题区域 */
+.title-box {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+/* 按钮区域 */
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* 按钮样式 */
+.nav-btn {
+    padding: 10px 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.nav-btn:hover {
+    background-color: white;
+    color: #000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 底部版权文字固定在底部 */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 12px 0;
+    color: #ccc;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size: 14px;
+    text-align: center;
+    z-index: 999;
+}
+

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动物种类识别系统</title>
+    <link rel="stylesheet" href="animal_pre_css/animal_pre.css">
+    <link rel="stylesheet" href="animal_pre_css/animal_pre_title.css">
+    <link rel="stylesheet" href="animal_pre_css/animal_pre_upload.css">
+    <link rel="stylesheet" href="animal_pre_css/animal_pre_button.css">
+    <link rel="stylesheet" href="animal_pre_css/animal_pre_view.css">
+    <link rel="stylesheet" href="animal_pre_css/animal_pre_hisrecord.css">
+    <link rel="stylesheet" href="animal_pre_css/animal_pre_popup.css">
+    <link rel="stylesheet" href="font/file_font/iconfont.css">
+    <link rel="stylesheet" href="font/button_font/iconfont.css">
+    <link rel="stylesheet" href="font/history_font/iconfont.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <header class="site_header header_reset">
+        <div class="header_title">动物识别系统</div>
+        <div class="button_container">
+            <!-- 首页按钮 -->
+            <a href="home_page.html" class="nav_button">
+                <i class="fas fa-home"></i> 首页
+            </a>
+    
+            <button class="nav_button" id="warnBtn">
+                <i class="fas fa-bell"></i> 预警监测
+            </button>
+
+            <!-- 数据面板按钮 -->
+            <a href="data_board.html" class="nav_button">
+                <i class="fas fa-tachometer-alt"></i> 数据面板
+            </a>
+    
+            <!-- 智能助手按钮 -->
+            <a href="chat_module.html" class="nav_button">
+                <i class="fas fa-robot"></i> 智能助手
+            </a>
+    
+            <!-- 识别功能按钮 -->
+            <a href="animal_pre.html" class="nav_button">
+                <i class="fas fa-crosshairs"></i> 识别功能
+            </a>
+        </div>
+    </header>
+
+    <div id="warnModal" style="display: none;" class="warn-modal">
+        <div class="warn-content">
+            <span class="warn-close">×</span>
+            <div id="animalButtons" class="animal-buttons-container"></div>
+        </div>
+    </div>
+
+    <!-- 图片选择框 -->
+    <div id="uploadBox" onclick="document.getElementById('imageInput').click();">
+        <span class="plus-sign">+</span>
+        <p id="transfer-sign">点击或拖拽上传</p>
+        <input type="file" id="imageInput" multiple accept="image/*" hidden>
+    </div>
+
+    <!-- 悬浮导航按钮 -->
+    <div>
+        <!-- 上传、查看图片结果和查看视频结果按钮 -->
+        <button id="uploadButton" class="floating-button" onclick="uploadImages()">
+            <span class="iconfont icon-shangchuan button_font"></span>
+            <span id="upload_tooltip" class="tooltip">点击上传图片或视频</span>
+        </button>
+
+        <button id="resultButton" class="floating-button" onclick="fetchResults()">
+            <span class="iconfont icon-chakan button_font"></span>
+            <span id="result_tooltip" class="tooltip">点击查看图片预测结果</span>
+        </button>
+
+        <button id="historyButton" class="floating-button">
+            <span class="iconfont icon-lishijilu button_font"></span>
+            <span id="history_tooltip" class="tooltip">点击查看历史记录</span>
+        </button>
+
+        <!-- 下载按钮 -->
+        <a id="downloadLink" class="floating-button">
+            <span class="iconfont icon-xiazai button_font"></span>
+            <div id="down_tooltip" class="tooltip">点击下载图片或视频</div>
+        </a>
+
+        <!-- GitHub导航 -->
+        <a href="https://github.com/WyCccc0v0/AnimalClassificationSystemFinal" class="floating-button" id="floatingNav" target="_blank">
+            <span class="iconfont icon-wendang file_font"></span>
+            <div id="Nav_tooltip" class="tooltip">项目源码文档-GitHub</div>
+        </a>
+    </div>
+
+    <!-- 预测和结果盒子 -->
+    <div>
+        <div id="box_title">
+            <span class="title-left">上传预览</span>
+            <span class="title-right">结果查看</span>
+        </div>
+    
+        <div id="predict" class="predict_box">
+            <div id="preview"></div>
+            <div id="results"></div>
+        </div>
+    </div>
+
+    <!-- 历史记录表容器 -->
+    <div id="historyModal">
+        <div class="history-content">
+            <span class="history-close">×</span>
+            <div class="history-header">
+                <div class="col">批次</div>
+                <div class="col">数量</div>
+                <div class="col">类型</div>
+                <div class="col">操作</div>
+            </div>
+            <div class="history-body">
+                <div class="history-row">
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col">
+                        <button class="btn-view">查看</button>
+                        <button class="btn-download">下载</button>
+                    </div>
+                </div>
+                <div class="history-row">
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col">
+                        <button class="btn-view">查看</button>
+                        <button class="btn-download">下载</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script  src="animal_pre_js/animal_pre.js"></script>
+    <script type="module" src="animal_pre_js/animal_pre_maintest.js"></script>
+
+</body>
+</html>

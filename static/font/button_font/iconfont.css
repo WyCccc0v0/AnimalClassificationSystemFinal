@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "iconfont"; /* Project id  */
+  src: url('iconfont.ttf?t=1744360373235') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-chakanMV:before {
+  content: "\e604";
+}
+
+.icon-shangchuan:before {
+  content: "\e607";
+}
+
+.icon-xiazai:before {
+  content: "\e618";
+}
+
+.icon-chakan:before {
+  content: "\e61c";
+}
+

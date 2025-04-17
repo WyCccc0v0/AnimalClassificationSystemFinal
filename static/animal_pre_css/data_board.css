@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    padding: 20px;
+}
+
+/* 统计数据的方框和阴影样式 */
+.stats {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.stats div {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1.2rem;
+    width: 200px;
+}
+
+.stats div strong {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.animal-selection {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* 选择动物按钮 */
+#select_animals_button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#select_animals_button:hover {
+    background-color: #45a049;
+}
+
+/* 弹出框的样式 */
+#animal_modal {
+    display: none;  /* 隐藏弹出框 */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-height: 400px;
+    overflow-y: auto;
+    z-index: 100;
+}
+
+#animal_modal h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#animal_modal .animal-button {
+    margin: 5px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+#animal_modal .animal-button.selected {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#animal_modal .animal-button:hover {
+    background-color: #45a049;
+}
+
+/* 关闭按钮 */
+#close_modal {
+    padding: 10px 20px;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto 0;
+}
+
+#close_modal:hover {
+    background-color: #ff5252;
+}
+
+/* 查询按钮 */
+#query_button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#query_button:hover {
+    background-color: #45a049;
+}
+
+#result_table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#result_table th, #result_table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+#result_table th {
+    background-color: #f2f2f2;
+}

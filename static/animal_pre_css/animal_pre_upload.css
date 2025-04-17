@@ -1,0 +1,40 @@
+/* #region上传框 */
+#uploadBox {
+    width: 360px;
+    height: 200px;
+    margin: 20px auto;
+    border: 2px dashed #819cb9;
+    border-radius: 12px;
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* 上传框 */
+#uploadBox:hover {
+    background-color: #e0e6ed;
+    border-color: #6d8aa6;
+}
+
+/* 上传框的"+"加号图标 */
+.plus-sign {
+    font-size: 60px;
+    color: #819cb9;
+    font-weight: bold;
+}
+
+/* 上传框的提示字符 */
+#transfer-sign {
+    font-size: 20px;
+    color: #819cb9;
+}
+
+/* 上传框隐藏默认文件上传按钮 */
+#imageInput {
+    display: none;
+}
+/* #endregion */

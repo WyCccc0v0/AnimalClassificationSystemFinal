@@ -29,9 +29,11 @@
 - **实时监控预警**：支持图片和视频检测和自定义预警规则
   <img width="1244" alt="1744910000746" src="https://github.com/user-attachments/assets/8a6cf8ae-ebff-4669-ac90-69435a057ae8" />
 
-- **完整的数据分析**：提供检测历史记录和数据统计功能
-  ![bb14838682c2d759131843c8b77751a](https://github.com/user-attachments/assets/0c0b8126-8265-4f0a-b432-8832ed58c495)
-  ![e199e8a4b58f156dfdf8aceed0166e4](https://github.com/user-attachments/assets/d0b14e7e-9aff-447e-abd2-31845bfe3707)
+- **完整的数据分析**：提供检测历史记录和下载功能
+![23](https://github.com/user-attachments/assets/a7fe32e1-c643-48d8-935a-02a782e2d280)
+![24](https://github.com/user-attachments/assets/c5288750-fe88-4da3-86c2-efaec8915626)
+
+
 
 - **智能AI对话**：集成Ollama API，支持智能问答交互（文本和语音交互）
   <img width="1244" alt="83e0c6efb520ff4a71fee38a82b9255" src="https://github.com/user-attachments/assets/1d54cb2c-00d9-44cc-ade4-9dd6127f56cc" />

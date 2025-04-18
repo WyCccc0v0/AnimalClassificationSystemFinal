@@ -20,8 +20,8 @@
 本系统是一个功能完备的动物智能检测平台，具有以下特点：
 
 - **直观的用户界面**：提供简洁美观的Web界面，支持拖拽上传和实时预览
-<img width="1244" alt="1744989481558" src="https://github.com/user-attachments/assets/b597342a-2b3e-4a4b-8d8e-b22305966f46" />
-<img width="1244" alt="1744909039411" src="https://github.com/user-attachments/assets/3ecc6943-d755-432c-9437-bd56b0468fbe" />
+  <img width="1244" alt="1744989481558" src="https://github.com/user-attachments/assets/b597342a-2b3e-4a4b-8d8e-b22305966f46" />
+  <img width="1244" alt="1744909039411" src="https://github.com/user-attachments/assets/3ecc6943-d755-432c-9437-bd56b0468fbe" />
 
 - **强大的检测能力**：基于YOLOv11模型，可准确识别多种动物类型
   <img width="1274" alt="4566d449d2edd18acd42703c16cc6cf" src="https://github.com/user-attachments/assets/5c36370f-d970-48af-ae0a-8038b6190764" />

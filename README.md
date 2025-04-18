@@ -1,4 +1,4 @@
-<img width="1244" alt="1744909039411" src="https://github.com/user-attachments/assets/4ff5e3b9-f19d-4682-a24e-8cb64cd5d045" /># **动物检测系统——Animal Vision**
+# **动物检测系统——Animal Vision**
 
 基于YOLOv11与DeepSeek-R1-1.5B大模型的智能动物检测系统，构建集动物识别、知识学习与智能问答于一体的动物百科系统——AnimalVision。系统通过改进的YOLOv11实现高精度动物检测，结合微调的大语言模型提供专业知识解答，形成"视觉识别-知识推送-交互问答"的完整生态链，适用于科普教育、生态研究等场景
 
